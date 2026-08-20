@@ -1,0 +1,83 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-border: var(--border);
+  --color-ring: var(--ring);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-gold: #D4AF37;
+  --color-gold-light: #E8D48B;
+  --color-gold-dark: #B8960C;
+  --color-dark: #0A0A0F;
+  --color-dark-card: #12121A;
+  --color-dark-border: #1E1E2A;
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+}
+
+:root {
+  --radius: 0.5rem;
+  --background: #0A0A0F;
+  --foreground: #F5F5F5;
+  --primary: #D4AF37;
+  --primary-foreground: #0A0A0F;
+  --secondary: #12121A;
+  --secondary-foreground: #F5F5F5;
+  --muted: #1E1E2A;
+  --muted-foreground: #9CA3AF;
+  --accent: #D4AF37;
+  --accent-foreground: #0A0A0F;
+  --border: #1E1E2A;
+  --ring: #D4AF37;
+  --card: #12121A;
+  --card-foreground: #F5F5F5;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .text-gradient-gold {
+    background: linear-gradient(135deg, #D4AF37 0%, #F5E6A3 50%, #D4AF37 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .border-gold {
+    border-color: #D4AF37;
+  }
+  .bg-gold {
+    background-color: #D4AF37;
+  }
+  .text-gold {
+    color: #D4AF37;
+  }
+  .hover-gold:hover {
+    color: #D4AF37;
+  }
+}
