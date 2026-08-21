@@ -24,7 +24,7 @@ export default function Navbar() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-[#0B0B12]/90 backdrop-blur-md border-b border-white/5"
+          ? "bg-white/90 backdrop-blur-md border-b border-[#D4AF37]/10"
           : "bg-transparent"
       }`}
     >
@@ -44,7 +44,7 @@ export default function Navbar() {
             <a
               key={link.href}
               href={link.href}
-              className="text-[13px] font-medium text-[#8B8B96] hover:text-[#D4AF37] transition-colors tracking-[0.12em] uppercase"
+              className="text-[13px] font-medium text-[#6B6B76] hover:text-[#D4AF37] transition-colors tracking-[0.12em] uppercase"
             >
               {link.label}
             </a>
@@ -53,7 +53,7 @@ export default function Navbar() {
 
         <a
           href="#contact"
-          className="hidden md:inline-block bg-[#D4AF37] text-[#0B0B12] px-6 py-2.5 text-[13px] font-semibold tracking-[0.1em] uppercase hover:bg-[#E2BE4D] transition-colors"
+          className="hidden md:inline-block bg-[#D4AF37] text-white px-6 py-2.5 text-[13px] font-semibold tracking-[0.1em] uppercase hover:bg-[#E2BE4D] transition-colors"
         >
           Get in Touch
         </a>
@@ -65,12 +65,12 @@ export default function Navbar() {
           aria-label="Toggle menu"
         >
           <span
-            className={`block w-6 h-px bg-[#F1F1F1] transition-all ${
+            className={`block w-6 h-px bg-[#1A1A1A] transition-all ${
               menuOpen ? "rotate-45 translate-y-[3.5px]" : ""
             }`}
           />
           <span
-            className={`block w-6 h-px bg-[#F1F1F1] transition-all ${
+            className={`block w-6 h-px bg-[#1A1A1A] transition-all ${
               menuOpen ? "-rotate-45 -translate-y-[3.5px]" : ""
             }`}
           />
@@ -79,14 +79,14 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="md:hidden bg-[#0B0B12]/95 backdrop-blur-md border-t border-white/5 px-6 pb-6">
+        <div className="md:hidden bg-white/95 backdrop-blur-md border-t border-[#D4AF37]/10 px-6 pb-6">
           <div className="flex flex-col gap-4 pt-4">
             {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
                 onClick={() => setMenuOpen(false)}
-                className="text-[14px] font-medium text-[#8B8B96] hover:text-[#D4AF37] transition-colors tracking-[0.1em] uppercase"
+                className="text-[14px] font-medium text-[#6B6B76] hover:text-[#D4AF37] transition-colors tracking-[0.1em] uppercase"
               >
                 {link.label}
               </a>
@@ -94,7 +94,7 @@ export default function Navbar() {
             <a
               href="#contact"
               onClick={() => setMenuOpen(false)}
-              className="inline-block bg-[#D4AF37] text-[#0B0B12] px-6 py-3 text-[13px] font-semibold tracking-[0.1em] uppercase text-center mt-2"
+              className="inline-block bg-[#D4AF37] text-white px-6 py-3 text-[13px] font-semibold tracking-[0.1em] uppercase text-center mt-2"
             >
               Get in Touch
             </a>

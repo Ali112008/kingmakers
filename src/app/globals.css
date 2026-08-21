@@ -28,20 +28,20 @@
 
 :root {
   --radius: 0.5rem;
-  --background: #0B0B12;
-  --foreground: #F1F1F1;
+  --background: #FFFFFF;
+  --foreground: #1A1A1A;
   --primary: #D4AF37;
-  --primary-foreground: #0B0B12;
-  --secondary: #111119;
-  --secondary-foreground: #F1F1F1;
-  --muted: #8B8B96;
-  --muted-foreground: #8B8B96;
+  --primary-foreground: #FFFFFF;
+  --secondary: #F9F7F2;
+  --secondary-foreground: #1A1A1A;
+  --muted: #6B6B76;
+  --muted-foreground: #6B6B76;
   --accent: #D4AF37;
-  --accent-foreground: #0B0B12;
-  --border: rgba(255, 255, 255, 0.06);
+  --accent-foreground: #FFFFFF;
+  --border: rgba(0, 0, 0, 0.08);
   --ring: #D4AF37;
-  --card: #111119;
-  --card-foreground: #F1F1F1;
+  --card: #F9F7F2;
+  --card-foreground: #1A1A1A;
 }
 
 @layer base {
@@ -62,7 +62,7 @@
 
 @layer utilities {
   .text-gradient-gold {
-    background: linear-gradient(135deg, #D4AF37 0%, #F5E6A3 50%, #D4AF37 100%);
+    background: linear-gradient(135deg, #B8960C 0%, #D4AF37 40%, #E8CC6E 60%, #D4AF37 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
