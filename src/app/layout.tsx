@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
-import { Geist } from "next/font/google";
+import { Manrope } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const manrope = Manrope({
+  variable: "--font-manrope",
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -12,14 +14,14 @@ export const metadata: Metadata = {
   description:
     "Strategic Introductions, Private Commercial Opportunities & Institutional Connections. We Make Markets Move.",
   keywords: [
-    "Commercial Brokers",
-    "Dubai",
-    "Business Introductions",
-    "Private Opportunities",
-    "Institutional Connections",
-  ],
+      "Commercial Brokers",
+      "Dubai",
+      "Business Introductions",
+      "Private Opportunities",
+      "Institutional Connections",
+    ],
   icons: {
-    icon: "/logo.jpg",
+    icon: "/logo.png",
   },
   openGraph: {
     title: "KINGMAKERS | Commercial Brokers",
@@ -35,9 +37,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${geistSans.variable} antialiased bg-dark text-foreground`}>
-        {children}
-      </body>
+      <body className={`${manrope.variable} antialiased`}>{children}</body>
     </html>
   );
 }
