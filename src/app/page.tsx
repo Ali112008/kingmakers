@@ -82,15 +82,15 @@ const standards = [
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col bg-dark">
+    <div className="min-h-screen flex flex-col bg-gradient-to-b from-[#0F0F18] via-[#0A0A12] to-[#08080D]">
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-dark/90 backdrop-blur-md border-b border-dark-border">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-[#0F0F18]/80 backdrop-blur-md border-b border-white/5">
         <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
           <Image
-            src="/logo.jpg"
-            alt="KINGMAKERS"
-            width={120}
-            height={50}
+            src="/logo.png"
+            alt="KINGMAKERS Commercial Brokers"
+            width={160}
+            height={60}
             className="object-contain h-10 w-auto"
           />
           <div className="hidden md:flex items-center gap-8">
@@ -147,7 +147,7 @@ export default function Home() {
 
       {/* Divider */}
       <div className="max-w-6xl mx-auto px-6">
-        <div className="border-t border-dark-border" />
+        <div className="border-t border-white/5" />
       </div>
 
       {/* Tagline */}
@@ -181,7 +181,7 @@ export default function Home() {
             {networkItems.map((item) => (
               <div
                 key={item.title}
-                className="bg-dark-card border border-dark-border p-8 hover:border-gold/30 transition-colors"
+                className="bg-[#0E0E17] border border-white/5 p-8 hover:border-gold/30 transition-colors"
               >
                 <h3 className="text-xl font-semibold text-gold mb-3">
                   {item.title}
@@ -196,7 +196,7 @@ export default function Home() {
       </section>
 
       {/* Private Opportunities */}
-      <section className="py-20 px-6 bg-dark-card">
+      <section className="py-20 px-6 bg-[#0E0E17]">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-gold text-sm tracking-[0.3em] uppercase mb-4">
             Private Commercial Opportunities
@@ -243,7 +243,7 @@ export default function Home() {
             {processSteps.map((step) => (
               <div
                 key={step.number}
-                className="relative bg-dark-card border border-dark-border p-8 text-center"
+                className="relative bg-[#0E0E17] border border-white/5 p-8 text-center"
               >
                 <span className="text-4xl font-bold text-gold/20">
                   {step.number}
@@ -266,7 +266,7 @@ export default function Home() {
       </section>
 
       {/* Standards Section */}
-      <section id="standards" className="py-20 px-6 bg-dark-card">
+      <section id="standards" className="py-20 px-6 bg-[#0E0E17]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <p className="text-gold text-sm tracking-[0.3em] uppercase mb-4">
@@ -308,7 +308,7 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 px-6 bg-dark-card">
+      <section id="contact" className="py-20 px-6 bg-[#0E0E17]">
         <div className="max-w-3xl mx-auto text-center">
           <p className="text-gold text-sm tracking-[0.3em] uppercase mb-4">
             Private Enquiries
@@ -366,7 +366,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="py-8 px-6 border-t border-dark-border">
+      <footer className="py-8 px-6 border-t border-white/5 bg-[#08080D]">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
           <p>&copy; 2026 KINGMAKERS. All rights reserved.</p>
           <p>
