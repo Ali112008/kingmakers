@@ -34,7 +34,7 @@ export default function Navbar() {
           alt="KINGMAKERS"
           width={180}
           height={64}
-          className="object-contain h-14 w-auto"
+          className="object-contain h-20 w-auto"
           priority
         />
 
